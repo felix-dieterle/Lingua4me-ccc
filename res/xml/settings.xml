@@ -1,0 +1,43 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<CheckBoxPreference 
+		android:key="autoDownload" 
+		android:title="Auto download" 
+		android:summary="Download podcasts automatically" 
+		android:defaultValue="false" />
+	<com.jadn.cc.ui.TimePickerPreference 
+		android:key="timeAutoDownload"
+		android:title="Download time"
+		android:dialogTitle="Time of day to download podcasts"
+		android:summary="Set time of day on which to download podcasts" />
+	<CheckBoxPreference 
+		android:key="wifiDownload"
+		android:title="Require WIFI" 
+	 	android:summary="Require WIFI for auto download"
+	 	android:defaultValue="true" />
+	<ListPreference 
+		android:key="listmax"
+		android:title="Max downloads"
+		android:entries="@array/maxs"
+		android:entryValues="@array/maxsValues"
+		android:dialogTitle="Max podcasts to download per site per run"
+		android:summary="Set max number of downloads to obtain from one site in a run" />
+	<CheckBoxPreference 
+		android:key="showSplash" 
+		android:title="Enable splash screen" 
+		android:summary="On startup show splash screen once more" />
+	<CheckBoxPreference 
+		android:key="autoPlayNext"
+		android:title="Auto play next" 
+	 	android:summary="When the current podcast finishes, play the next one"
+	 	android:defaultValue="true" />
+	<CheckBoxPreference 
+		android:key="canCollectData" 
+		android:title="Allow data collection" 
+		android:summary="Data helps us improve" 
+		android:defaultValue="true" />
+	<CheckBoxPreference 
+		android:key="emailSecret" 
+		android:title="Keep email address secret" 
+		android:summary="Used for internal tracking only" 
+		android:defaultValue="false" />
+</PreferenceScreen>
